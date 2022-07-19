@@ -1,0 +1,39 @@
+@mixin mediaScreen($width) {
+    .container {
+        padding: 0 $width;
+    }
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #5B5E6D;
+    background: #fff;
+}
+
+.container {
+    padding: 0 1%;
+}
+
+header {
+    h1 {
+        text-align: center;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body__input-right {
+    border-left: 0.5px solid rgb(71, 77, 87);
+}
+
+.body__input-right, .body__input-left {
+    width: 50%;
+}

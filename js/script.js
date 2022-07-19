@@ -1,12 +1,8 @@
 function calculator() {
+
+    // Variables
     let inp = document.getElementsByName('trade');
     let selected = '';
-    for (var i = 0; i < inp.length; i++) {
-        if (inp[i].type == "radio" && inp[i].checked) {
-            selected = inp[i].value;
-        }
-    }
-
     let result = 0;
     let deposite = document.getElementById("deposite").value;
     let openCon = document.getElementById('openC').value;
@@ -15,13 +11,21 @@ function calculator() {
     let newNode = document.createElement('span');
     let elements = document.querySelectorAll('.depo');
     let laverage = document.getElementById('laverage').value;
+    let firstpart = 0;
+    let semiResult = 0;
+
+    for (var i = 0; i < inp.length; i++) {
+        if (inp[i].type == "radio" && inp[i].checked) {
+            selected = inp[i].value;
+        }
+    }
 
     if (elements.length > 0) {
         elements[0].remove();
     }
+
     newNode.setAttribute("class", "depo");
-    let firstpart = 0;
-    let semiResult = 0;
+
     if (selected === 'long') {
         firstpart = deposite * laverage;
         semiResult = (firstpart / openCon) * closeCon;
