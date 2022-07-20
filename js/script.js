@@ -53,6 +53,10 @@ function calculator() {
         result = 0;
     }
 
+    if (isNaN(perc)) {
+        perc = 0;
+    }
+
     newNode.appendChild(document.createTextNode(result));
     node.appendChild(newNode);
 
