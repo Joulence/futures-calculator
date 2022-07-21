@@ -155,6 +155,7 @@ input[name=trade] {
 .open-prices,
 .input-deposite {
     input {
+        width: 70%;
         background: none;
         text-align: right;
         border: none;
@@ -242,6 +243,24 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 1300px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 975px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 50%;
+        }
+    }
+}
+
 @media (max-width: 870px) {
     form {
         display: block;
@@ -262,10 +281,35 @@ input[type=number]::-webkit-outer-spin-button {
         border-top: 0.5px solid #474d57;
     }
 
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 70%;
+        }
+    }
+
     .rs-label {
         font-size: 25px;
         left: 20px;
         padding-top: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 40%;
+        }
     }
 }
 
@@ -278,7 +322,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 322px) {
-    #deposite, #openC {
-        margin-left: 0;
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 20%;
+        }
     }
 }
