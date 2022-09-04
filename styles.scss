@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $width: 97%;
 
 @mixin priceFields() {
@@ -6,6 +7,8 @@ $width: 97%;
     justify-content: space-between;
 }
 
+=======
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 * {
     padding: 0;
     box-sizing: border-box;
@@ -48,6 +51,7 @@ input[name=trade] {
     display: none
 }
 
+<<<<<<< HEAD
 .input {
     &-radio {
         text-align: center;
@@ -77,6 +81,19 @@ input[name=trade] {
 
         &:hover {
             background: #c9ab34;
+=======
+.input-radio {
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 70px;
+
+    label {
+        padding: 10px 20%;
+        cursor: pointer;
+
+        &:hover {
+            background: #DDD;
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
         }
     }
 }
@@ -99,6 +116,7 @@ input[name=trade] {
 
 }
 
+<<<<<<< HEAD
 
 .rs {
     &-range {
@@ -179,11 +197,94 @@ input[name=trade] {
         line-height: normal;
         font-size: 36px;
     }
+=======
+.rs-range {
+    margin-top: 29px;
+    width: 90%;
+    -webkit-appearance: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: #ffffff;
+        border-radius: 0px;
+        border: 0px solid #010101;
+    }
+
+    &::-moz-range-track {
+        width: 100%;
+        height: 1px;
+        cursor: pointer;
+        box-shadow: none;
+        background: #ffffff;
+        border-radius: 0px;
+        border: 0px solid #010101;
+    }
+
+    &::-webkit-slider-thumb {
+        box-shadow: none;
+        border: 0px solid #ffffff;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+    }
+
+    &::-moz-range-thumb {
+        box-shadow: none;
+        border: 0px solid #ffffff;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        height: 42px;
+        width: 22px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -20px;
+    }
+
+    &::-moz-focus-outer {
+        border: 0;
+    }
+}
+
+.rs-label {
+    width: 98px;
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: -38px;
+    left: attr(value);
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 }
 
 .open-prices,
 .input-deposite {
     input {
+<<<<<<< HEAD
+=======
+        width: 70%;
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
         background: none;
         text-align: right;
         border: none;
@@ -196,6 +297,7 @@ input[name=trade] {
     }
 }
 
+<<<<<<< HEAD
 .input-deposite {
     input {
         width: 80%
@@ -209,14 +311,27 @@ input[name=trade] {
     }
 }
 
+=======
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 .open-prices {
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
 .open-contract,
 .close-contract,
 .input-deposite {
     @include priceFields();
+=======
+.input-deposite {
+    input {
+        margin-left: 39px;
+    }
+}
+
+#openC {
+    margin-left: 2px;
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -225,6 +340,24 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+.input-submit {
+    cursor: pointer;
+    width: 97.5%;
+    background: #FCD535;
+    color: #181A20;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background: #c9ab34;
+    }
+}
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 
 .input-submit[disabled] {
     background: #c9ab34;
@@ -257,6 +390,35 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 1520px) {
+    .rs-label {
+        left: 15px;
+        padding-top: 13px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 975px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 50%;
+        }
+    }
+}
+
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 @media (max-width: 870px) {
     form {
         display: block;
@@ -277,6 +439,7 @@ input[type=number]::-webkit-outer-spin-button {
         border-top: 0.5px solid #474d57;
     }
 
+<<<<<<< HEAD
     .rs-label {
         font-size: 25px;
     }
@@ -313,12 +476,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media(max-width: 585px) {
+=======
+    .open-prices,
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
     .input-deposite {
         input {
             width: 70%;
         }
     }
 
+<<<<<<< HEAD
     .open-contract,
     .close-contract {
         input {
@@ -328,21 +495,45 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media(max-width: 488px) {
+=======
+    .rs-label {
+        font-size: 25px;
+        left: 20px;
+        padding-top: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .open-prices,
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
     .input-deposite {
         input {
             width: 60%;
         }
     }
+<<<<<<< HEAD
 
     .open-contract,
     .close-contract {
         input {
             width: 48%;
+=======
+}
+
+@media (max-width: 490px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 40%;
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
         }
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 @media (max-width: 382px) {
     .input-radio {
         label {
@@ -351,6 +542,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+<<<<<<< HEAD
 @media(max-width: 370px) {
 
     .open-contract,
@@ -371,4 +563,13 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
         margin-left: 0;
     }
+=======
+@media (max-width: 322px) {
+    .open-prices,
+    .input-deposite {
+        input {
+            width: 20%;
+        }
+    }
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
 }

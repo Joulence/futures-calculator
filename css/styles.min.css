@@ -1,1 +1,302 @@
+<<<<<<< HEAD
 *{padding:0;box-sizing:border-box}body{margin:0;color:#5b5e6d;background-color:#2b313a}.container{padding:0 2.5%}header h1{text-align:center;color:#fff}form{display:flex;justify-content:space-between}.body__input-right{margin-left:10px;padding-left:20px;border-left:.5px solid #474d57}.body__input-right,.body__input-left{width:50%}input[name=trade]{display:none}.input-radio{text-align:center;list-style-type:none;margin-bottom:70px}.input-radio label{padding:10px 20%;cursor:pointer}.input-radio label:hover{background:#ddd}.input-submit{cursor:pointer;width:97.5%;background:#fcd535;color:#181a20;height:40px;font-weight:500;border-radius:10px;border:none;outline:none}.input-submit:hover{background:#c9ab34}.box-minmax{margin:30px 0 30px 0;width:97.5%;display:flex;justify-content:space-between;font-size:20px;color:#fff}.box-minmax span:first-child{margin-left:10px}.range-slider{margin-top:30vh}.rs-range{margin-top:29px;width:95%;-webkit-appearance:none}.rs-range:focus{outline:none}.rs-range::-webkit-slider-runnable-track{width:100%;height:1px;cursor:pointer;box-shadow:none;background:#fff;border-radius:0px;border:0px solid #010101}.rs-range::-moz-range-track{width:100%;height:1px;cursor:pointer;box-shadow:none;background:#fff;border-radius:0px;border:0px solid #010101}.rs-range::-webkit-slider-thumb{box-shadow:none;border:0px solid #fff;box-shadow:0px 10px 10px rgba(0,0,0,.25);height:42px;width:22px;border-radius:22px;background:#fff;cursor:pointer;-webkit-appearance:none;margin-top:-20px}.rs-range::-moz-range-thumb{box-shadow:none;border:0px solid #fff;box-shadow:0px 10px 10px rgba(0,0,0,.25);height:42px;width:22px;border-radius:22px;background:#fff;cursor:pointer;-webkit-appearance:none;margin-top:-20px}.rs-range::-moz-focus-outer{border:0}.rs-label{width:98px;position:relative;transform-origin:center center;display:block;line-height:30px;text-align:center;font-weight:bold;box-sizing:border-box;margin-top:20px;margin-left:-38px;left:attr(value);color:#fff;font-style:normal;font-weight:normal;line-height:normal;font-size:36px}.open-prices input,.input-deposite input{background:none;text-align:right;border:none;color:#fff;outline:none}.open-prices span,.input-deposite span{color:#fff}.input-deposite input{width:80%}.open-contract input,.close-contract input{width:75%}.open-prices{margin-bottom:30px}.open-contract,.close-contract,.input-deposite{width:97%;display:flex;justify-content:space-between}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.input-submit[disabled]{background:#c9ab34}.input-submit[disabled]:hover{border:none;outline:none;cursor:no-drop}.output-h{color:#fff;margin-bottom:20px}.input-output-usdt{margin-bottom:10px}.input-output-usdt span,.input-output-perc span{color:#fff;float:right}.input-output-usdt span:first-child,.input-output-perc span:first-child{margin-left:10px}@media(max-width: 870px){form{display:block}.body__input-left,.body__input-right{width:100%}.body__input-right{margin-left:0;padding-left:0;border-left:none;margin-top:30px;padding-top:20px;border-top:.5px solid #474d57}.rs-label{font-size:25px}}@media(max-width: 730px){.input-deposite input{width:75%}.open-contract input,.close-contract input{width:65%}}@media(max-width: 645px){.input-deposite input{width:75%}.open-contract input,.close-contract input{width:65%}}@media(max-width: 585px){.input-deposite input{width:70%}.open-contract input,.close-contract input{width:60%}}@media(max-width: 488px){.input-deposite input{width:60%}.open-contract input,.close-contract input{width:48%}}@media(max-width: 382px){.input-radio label{padding:10px 15%}}@media(max-width: 370px){.open-contract,.close-contract,.input-deposite{width:100%;display:block;margin-bottom:10px}.open-contract input,.close-contract input,.input-deposite input{text-align:left;border:1px solid #fff;width:100%}.rs-label{position:unset;width:100%;margin-left:0}}/*# sourceMappingURL=styles.min.css.map */
+=======
+* {
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    color: #5b5e6d;
+    background-color: #2b313a
+}
+
+.container {
+    padding: 0 2.5%
+}
+
+header h1 {
+    text-align: center;
+    color: #fff
+}
+
+form {
+    display: flex;
+    justify-content: space-between
+}
+
+.body__input-right {
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: .5px solid #474d57
+}
+
+.body__input-right, .body__input-left {
+    width: 50%
+}
+
+input[name=trade] {
+    display: none
+}
+
+.input-radio {
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 70px
+}
+
+.input-radio label {
+    padding: 10px 20%;
+    cursor: pointer
+}
+
+.input-radio label:hover {
+    background: #ddd
+}
+
+.box-minmax {
+    margin: 30px 0 30px 0;
+    width: 97.5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #fff
+}
+
+.box-minmax span:first-child {
+    margin-left: 10px
+}
+
+.range-slider {
+    margin-top: 30vh
+}
+
+.rs-range {
+    margin-top: 29px;
+    width: 96%;
+    -webkit-appearance: none
+}
+
+.rs-range:focus {
+    outline: none
+}
+
+.rs-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #fff;
+    border-radius: 0px;
+    border: 0px solid #010101
+}
+
+.rs-range::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    box-shadow: none;
+    background: #fff;
+    border-radius: 0px;
+    border: 0px solid #010101
+}
+
+.rs-range::-webkit-slider-thumb {
+    box-shadow: none;
+    border: 0px solid #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px
+}
+
+.rs-range::-moz-range-thumb {
+    box-shadow: none;
+    border: 0px solid #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px
+}
+
+.rs-range::-moz-focus-outer {
+    border: 0
+}
+
+.rs-label {
+    width: 98px;
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: -38px;
+    left: attr(value);
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px
+}
+
+.open-prices input, .input-deposite input {
+    width: 70%;
+    background: none;
+    text-align: right;
+    border: none;
+    color: #fff;
+    outline: none
+}
+
+.open-prices span, .input-deposite span {
+    color: #fff
+}
+
+.open-prices {
+    margin-bottom: 30px
+}
+
+.input-deposite input {
+    margin-left: 39px
+}
+
+#openC {
+    margin-left: 2px
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.input-submit {
+    cursor: pointer;
+    width: 97.5%;
+    background: #fcd535;
+    color: #181a20;
+    height: 40px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    outline: none
+}
+
+.input-submit:hover {
+    background: #c9ab34
+}
+
+.input-submit[disabled] {
+    background: #c9ab34
+}
+
+.input-submit[disabled]:hover {
+    border: none;
+    outline: none;
+    cursor: no-drop
+}
+
+.output-h {
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.input-output-usdt {
+    margin-bottom: 10px
+}
+
+.input-output-usdt span, .input-output-perc span {
+    color: #fff;
+    float: right
+}
+
+.input-output-usdt span:first-child, .input-output-perc span:first-child {
+    margin-left: 10px
+}
+
+@media(max-width: 1520px) {
+    .rs-label {
+        left: 15px;
+        padding-top: 13px;
+        font-size: 30px
+    }
+}
+
+@media(max-width: 1300px) {
+    .open-prices input, .input-deposite input {
+        width: 60%
+    }
+}
+
+@media(max-width: 975px) {
+    .open-prices input, .input-deposite input {
+        width: 50%
+    }
+}
+
+@media(max-width: 870px) {
+    form {
+        display: block
+    }
+
+    .body__input-left, .body__input-right {
+        width: 100%
+    }
+
+    .body__input-right {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: .5px solid #474d57
+    }
+
+    .open-prices input, .input-deposite input {
+        width: 70%
+    }
+
+    .rs-label {
+        font-size: 25px;
+        left: 20px;
+        padding-top: 13px
+    }
+}
+
+@media(max-width: 640px) {
+    .open-prices input, .input-deposite input {
+        width: 60%
+    }
+}
+
+@media(max-width: 490px) {
+    .open-prices input, .input-deposite input {
+        width: 40%
+    }
+}
+
+@media(max-width: 382px) {
+    .input-radio label {
+        padding: 10px 15%
+    }
+}
+
+@media(max-width: 322px) {
+    .open-prices input, .input-deposite input {
+        width: 20%
+    }
+}
+
+/*# sourceMappingURL=styles.min.css.map */
+>>>>>>> e2e751d40363457b39f7beeea870c8c433d793fe
