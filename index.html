@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Futures calculator</h1>
+    </header>
+    <div class="container">
+        <form>
+            <div class="body__input-left">
+                <div class="input-radio">
+                    <label id="long-label"><input value="long" type="radio" name="trade" id="long" checked> Long</label>
+
+                    <label id="short-label"><input value="short" type="radio" name="trade" id="short"> Short</label>
+
+                </div>
+
+                <div class="input-laverage">
+                    <span id="rs-bullet" class="rs-label">0</span>
+                    <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="100">
+                </div>
+
+                <div class="box-minmax">
+                    <span>0</span><span>100</span>
+                </div>
+
+                <div class="input-deposite">
+                    <label>Your deposite:</label>
+                    <input id="deposite" type=number step=0.1>
+                    <span>USDT</span>
+                </div>
+
+                <div class="open-prices">
+                    <div class="open-contract">
+                        <label>Open contract price:</label>
+                        <input id="openC" type=number step=0.1>
+                        <span>USDT</span>
+                    </div>
+
+                    <div class="close-contract">
+                        <label>Close contract price:</label>
+                        <input id="closeC" type=number step=0.1>
+                        <span>USDT</span>
+                    </div>
+                </div>
+
+                <input disabled class="input-submit" value="Calculate" type="button" onclick="calculator()">
+            </div>
+
+            <div class="body__input-right">
+                <div class="output-h">
+                    Result
+                </div>
+
+                <div id="node-id" class="input-output-usdt">
+                    PNL:
+                    <span>USDT</span>
+                </div>
+
+                <div id="node-id2" class="input-output-perc">
+                    ROE:
+                    <span>%</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/range.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

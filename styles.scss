@@ -1,0 +1,374 @@
+$width: 97%;
+
+@mixin priceFields() {
+    width: $width;
+    display: flex;
+    justify-content: space-between;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #5B5E6D;
+    background-color: rgb(43, 49, 58);
+}
+
+.container {
+    padding: 0 2.5%;
+}
+
+header {
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body__input-right {
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: 0.5px solid rgb(71, 77, 87);
+}
+
+.body__input-right,
+.body__input-left {
+    width: 50%;
+}
+
+input[name=trade] {
+    display: none
+}
+
+.input {
+    &-radio {
+        text-align: center;
+        list-style-type: none;
+        margin-bottom: 70px;
+
+        label {
+            padding: 10px 20%;
+            cursor: pointer;
+
+            &:hover {
+                background: #DDD;
+            }
+        }
+    }
+
+    &-submit {
+        cursor: pointer;
+        width: 97.5%;
+        background: #FCD535;
+        color: #181A20;
+        height: 40px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background: #c9ab34;
+        }
+    }
+}
+
+.box-minmax {
+    margin: 30px 0 30px 0;
+    width: 97.5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    span:first-child {
+        margin-left: 10px;
+    }
+}
+
+.range-slider {
+    margin-top: 30vh;
+
+}
+
+
+.rs {
+    &-range {
+        margin-top: 29px;
+        width: 95%;
+        -webkit-appearance: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            box-shadow: none;
+            background: #ffffff;
+            border-radius: 0px;
+            border: 0px solid #010101;
+        }
+
+        &::-moz-range-track {
+            width: 100%;
+            height: 1px;
+            cursor: pointer;
+            box-shadow: none;
+            background: #ffffff;
+            border-radius: 0px;
+            border: 0px solid #010101;
+        }
+
+        &::-webkit-slider-thumb {
+            box-shadow: none;
+            border: 0px solid #ffffff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            height: 42px;
+            width: 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -20px;
+        }
+
+        &::-moz-range-thumb {
+            box-shadow: none;
+            border: 0px solid #ffffff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            height: 42px;
+            width: 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -20px;
+        }
+
+        &::-moz-focus-outer {
+            border: 0;
+        }
+    }
+
+    &-label {
+        width: 98px;
+        position: relative;
+        transform-origin: center center;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        box-sizing: border-box;
+        margin-top: 20px;
+        margin-left: -38px;
+        left: attr(value);
+        color: #fff;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 36px;
+    }
+}
+
+.open-prices,
+.input-deposite {
+    input {
+        background: none;
+        text-align: right;
+        border: none;
+        color: #fff;
+        outline: none;
+    }
+
+    span {
+        color: #fff;
+    }
+}
+
+.input-deposite {
+    input {
+        width: 80%
+    }
+}
+
+.open-contract,
+.close-contract {
+    input {
+        width: 75%;
+    }
+}
+
+.open-prices {
+    margin-bottom: 30px;
+}
+
+.open-contract,
+.close-contract,
+.input-deposite {
+    @include priceFields();
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.input-submit[disabled] {
+    background: #c9ab34;
+
+    &:hover {
+        border: none;
+        outline: none;
+        cursor: no-drop;
+    }
+}
+
+.output-h {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-output-usdt {
+    margin-bottom: 10px;
+}
+
+.input-output-usdt,
+.input-output-perc {
+    span {
+        color: #fff;
+        float: right;
+
+        &:first-child {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    form {
+        display: block;
+    }
+
+    .body__input-left,
+    .body__input-right {
+        width: 100%;
+    }
+
+    .body__input-right {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 0.5px solid #474d57;
+    }
+
+    .rs-label {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 730px) {
+    .input-deposite {
+        input {
+            width: 75%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 65%;
+        }
+    }
+}
+
+@media(max-width: 645px) {
+    .input-deposite {
+        input {
+            width: 75%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 65%;
+        }
+    }
+}
+
+@media(max-width: 585px) {
+    .input-deposite {
+        input {
+            width: 70%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width: 488px) {
+    .input-deposite {
+        input {
+            width: 60%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 48%;
+        }
+    }
+}
+
+
+@media (max-width: 382px) {
+    .input-radio {
+        label {
+            padding: 10px 15%;
+        }
+    }
+}
+
+@media(max-width: 370px) {
+
+    .open-contract,
+    .close-contract,
+    .input-deposite {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        input {
+            text-align: left;
+            border: 1px solid white;
+            width: 100%;
+        }
+    }
+
+    .rs-label {
+        position: unset;
+        width: 100%;
+        margin-left: 0;
+    }
+}
