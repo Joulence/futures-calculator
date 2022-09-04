@@ -257,6 +257,36 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 1508px) {
+    .input-deposite {
+        input {
+            width: 75%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 1270px) {
+    .input-deposite {
+        input {
+            width: 65%;
+        }
+    }
+
+    .open-contract,
+    .close-contract {
+        input {
+            width: 55%;
+        }
+    }
+}
+
 @media (max-width: 870px) {
     form {
         display: block;
