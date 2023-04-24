@@ -1,6 +1,11 @@
 # Futures Profit Calculator
 This is a simple calculator that helps you calculate your profits from trading with futures.
 
+## Technologies Used:
+* HTML
+* SCSS
+* JavaScript
+
 ## Features
 * Calculate your profit by entering the details of your trades, including the number of contracts, the entry price, and the exit price.
 * The calculator automatically calculates your profit and displays it on the screen.
